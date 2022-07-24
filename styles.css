@@ -166,7 +166,14 @@ input {
 input:focus {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     outline: none;
-    border: 1px solid rgb(178, 214, 0);
+}
+
+input:focus:invalid {
+    border: 1px solid rgb(214, 75, 0);
+}
+
+input:focus:valid {
+    border: 1px solid rgb(139, 214, 0);
 }
 
 .bottom-button {
