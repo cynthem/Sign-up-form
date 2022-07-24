@@ -131,11 +131,11 @@ span {
 
 .middle-form {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 20px 5px;
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -158,9 +158,9 @@ label {
 
 input {
     width: 70%;
-    border: 1px solid rgb(194, 193, 193);
-    border-radius: 3px;
-    padding: 4px 7px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 5px 7px;
 }
 
 input:focus {
@@ -173,7 +173,7 @@ input:focus:invalid {
 }
 
 input:focus:valid {
-    border: 1px solid rgb(139, 214, 0);
+    border: 1px solid rgb(176, 207, 2);
 }
 
 .bottom-button {
