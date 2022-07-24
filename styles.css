@@ -101,3 +101,7 @@ label {
     gap: 10px;
     padding-top: 20px;
 }
+
+a {
+    text-decoration: none;
+}
