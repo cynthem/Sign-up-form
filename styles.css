@@ -52,6 +52,10 @@ h1 {
 
 /* Right-side form */
 
+span {
+    font-style: italic;
+}
+
 .right-form {
     display: flex;
     flex-direction: column;
@@ -95,4 +99,5 @@ label {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 20px;
 }
