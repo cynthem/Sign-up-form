@@ -102,10 +102,6 @@ h1 {
     height: 100vh;
 }
 
-span {
-    font-style: italic;
-}
-
 .top-descriptor,
 .middle-form,
 .bottom-button {
@@ -116,6 +112,16 @@ span {
 .top-descriptor {
     padding-bottom: 50px;
     margin-top: -20px;
+}
+
+.top-descriptor > p,
+span,
+.middle-form > p {
+    font-family: 'American Typewriter', serif;
+}
+
+span {
+    font-style: italic;
 }
 
 .middle-form {
@@ -137,8 +143,9 @@ span {
 }
 
 label {
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(82, 82, 82);
+    font-family: monospace;
 }
 
 input {
