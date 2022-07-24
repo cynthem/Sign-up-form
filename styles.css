@@ -1,20 +1,14 @@
 *,
 *::before,
 *::after {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html {
-    /*position: relative;*/
-    min-height: 100%;
-}
-
 .container {
     display: flex;
-    height: 100vh;
-    min-height: 500px;
+    width: 100vw;
 }
 
 
@@ -33,6 +27,10 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    position: relative;
+    top: 20vh;
+    padding: 20px 0;
+    height: auto;
 }
 
 .logo-container > img {
@@ -52,20 +50,17 @@ h1 {
 
 /* Right-side form */
 
-span {
-    font-style: italic;
-}
-
 .right-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 60vw;
+    background-color: lightgray;
+    height: 100vh;
 }
 
-.top-descriptor,
-.bottom-button {
-    background-color: lightgray;
+span {
+    font-style: italic;
 }
 
 .top-descriptor,
@@ -75,10 +70,18 @@ span {
     padding-right: 150px;
 }
 
+.top-descriptor {
+    padding-bottom: 50px;
+    margin-top: -20px;
+}
+
 .middle-form {
     display: grid;
     grid-gap: 15px 60px;
     grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .middle-form > p {
@@ -95,13 +98,31 @@ label {
     color: rgb(104, 104, 104);
 }
 
+.bottom-button {
+    padding-top: 30px;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
 .login-link {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 a {
     text-decoration: none;
+}
+
+a > img {
+    width: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover,
+img:hover {
+    transform: scale(1.3);
 }
