@@ -108,16 +108,14 @@ button {
     margin-bottom: 15px;
 }
 
-.login-link {
-    padding-top: 25px;
+.link {
+    padding-top: 10px;
+    display: flex;
 }
 
 a {
     text-decoration: none;
-}
-
-a > img {
-    width: 5%;
+    padding-left: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
