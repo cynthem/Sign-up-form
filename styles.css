@@ -173,11 +173,25 @@ input:focus {
     outline: none;
 }
 
-input:focus:invalid {
+#email:focus:invalid,
+#phone:focus:invalid,
+#password:focus:invalid,
+#pw-confirm:focus:invalid {
     border: 1px solid rgb(214, 75, 0);
 }
 
-input:focus:valid {
+#email:focus:valid,
+#phone:focus:valid,
+#password:focus:valid,
+#pw-confirm:focus:valid {
+    border: 1px solid rgb(176, 207, 2);
+}
+
+.name-invalid {
+    border: 1px solid rgb(214, 75, 0);
+}
+
+.name-valid {
     border: 1px solid rgb(176, 207, 2);
 }
 
