@@ -103,15 +103,14 @@ h1 {
     height: 100vh;
 }
 
-.top-descriptor,
 .middle-form,
 .bottom-button {
     padding-left: 40px;
-    padding-right: 150px;
+    padding-right: 40px;
 }
 
 .top-descriptor {
-    padding-bottom: 50px;
+    padding: 0px 150px 50px 40px;
     margin-top: -20px;
 }
 
@@ -140,9 +139,10 @@ span {
 
 form {
     display: grid;
-    grid-gap: 0px 5px;
+    grid-gap: 0px 80px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
+    margin-right: 200px;
 }
 
 .grid {
@@ -161,7 +161,7 @@ label {
 }
 
 input {
-    width: 70%;
+    width: 100%;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 4px;
     padding: 5px 7px;
