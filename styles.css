@@ -1,3 +1,43 @@
+/* life-savers-regular - latin */
+@font-face {
+    font-family: 'Life Savers';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./resources/fonts/life-savers-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./resources/fonts/life-savers-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./resources/fonts/life-savers-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./resources/fonts/life-savers-v18-latin-regular.svg#LifeSavers') format('svg'); /* Legacy iOS */
+}
+/* life-savers-700 - latin */
+@font-face {
+    font-family: 'Life Savers 700';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./resources/fonts/life-savers-v18-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./resources/fonts/life-savers-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./resources/fonts/life-savers-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./resources/fonts/life-savers-v18-latin-700.svg#LifeSavers') format('svg'); /* Legacy iOS */
+}
+/* life-savers-800 - latin */
+@font-face {
+    font-family: 'Life Savers 800';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./resources/fonts/life-savers-v18-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./resources/fonts/life-savers-v18-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./resources/fonts/life-savers-v18-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('./resources/fonts/life-savers-v18-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./resources/fonts/life-savers-v18-latin-800.svg#LifeSavers') format('svg'); /* Legacy iOS */
+}
+
 *,
 *::before,
 *::after {
@@ -29,12 +69,12 @@
     gap: 10px;
     position: relative;
     top: 20vh;
-    padding: 20px 0;
+    padding: 10px 0;
     height: auto;
 }
 
 .logo-container > img {
-    width: 10%;
+    width: 15%;
 }
 
 .logo-container > img,
@@ -44,6 +84,9 @@
 
 h1 {
     color: white;
+    font-family: 'Life Savers 800', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.02em;
 }
 
 
