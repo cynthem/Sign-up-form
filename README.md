@@ -9,4 +9,4 @@ To do:
 - Additional default form style changes.
 
 ## Screenshot
-![signupform](https://user-images.githubusercontent.com/96557009/180674351-8840c716-6636-463d-a64e-e9093bf2922d.png)
+![signupform](https://user-images.githubusercontent.com/96557009/180674558-0a2c4f5d-cbae-44e6-a5f1-ee44679b5fe0.png)
