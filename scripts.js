@@ -107,33 +107,48 @@ phoneInput.addEventListener('focusout', (e) => {
 })
 
 let message = '';
-const first = '*Missing at least 1 capital letter.';
-const second = '*Missing at least 1 number.';
-const third = '*Password must be at least 8 characters.';
-const space = '\n';
+const first = '*Missing at least 1 capital letter. ';
+const second = '*Missing at least 1 number. ';
+const third = '*Password must be at least 8 characters. ';
 
-passwordInput.addEventListener('focusout', (e) => {
+passwordInput.addEventListener('input', (e) => {
     if (passwordInput.validity.patternMismatch) {
+        message = '';
         const regExCap = /[A-Z]/g;
         const regExDig = /[0-9]/g;
         const entry = passwordInput.value;
         if (!regExCap.test(entry)) {
-            message += `${first}${space}`;
-        } else {
-            message += '';
+            message += `${first}`;
         }
         if (!regExDig.test(entry)) {
-            message += `${second}${space}`;
-        } else {
-            message += '';
+            message += `${second}`;
         }
         if (entry.length < 9) {
-            message += `${third}${space}`;
-        } else {
-            message += '';
+            message += `${third}`;
         }
-        passwordError.textContent = message;
     } else {
-        passwordError.textContent = '';
+        message = '';
     }
+    passwordError.textContent = message;
+})
+
+passwordInput.addEventListener('focusout', (e) => {
+    if (passwordInput.validity.patternMismatch) {
+        message = '';
+        const regExCap = /[A-Z]/g;
+        const regExDig = /[0-9]/g;
+        const entry = passwordInput.value;
+        if (!regExCap.test(entry)) {
+            message += `${first}`;
+        } 
+        if (!regExDig.test(entry)) {
+            message += `${second}`;
+        }
+        if (entry.length < 9) {
+            message += `${third}`;
+        }
+    } else {
+        message = '';
+    }
+    passwordError.textContent = message;
 })
