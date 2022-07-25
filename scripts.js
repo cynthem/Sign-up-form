@@ -3,12 +3,13 @@ const lastInput = document.getElementById('last-name');
 const emailInput = document.getElementById('email');
 const phoneInput = document.getElementById('phone');
 const passwordInput = document.getElementById('password');
-
+const confirmInput = document.getElementById('pw-confirm');
 const firstError = document.querySelector('.first');
 const lastError = document.querySelector('.last');
 const emailError = document.querySelector('.email');
 const phoneError = document.querySelector('.phone');
 const passwordError = document.querySelector('.password');
+const confirmError = document.querySelector('.confirm');
 
 const submitBtn = document.querySelector('.submit');
 
@@ -151,4 +152,20 @@ passwordInput.addEventListener('focusout', (e) => {
         message = '';
     }
     passwordError.textContent = message;
+})
+
+confirmInput.addEventListener('input', (e) => {
+    if (confirmInput.value === passwordInput.value) {
+        confirmError.textContent = '';
+    } else {
+        confirmError.textContent = 'Passwords do not match.'
+    }
+})
+
+confirmInput.addEventListener('focusout', (e) => {
+    if (confirmInput.value === passwordInput.value) {
+        confirmError.textContent = '';
+    } else {
+        confirmError.textContent = 'Passwords do not match.'
+    }
 })
