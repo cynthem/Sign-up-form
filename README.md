@@ -1,5 +1,6 @@
 # Sign-up-form
 > A sign-up form page for a faux streaming service. Uses JavaScript to manipulate form styles and error messages. This project was completed as part of The Odin Project's Full Stack Javascript curriculum.
+
 > Live demo [_here_](https://doozles411.github.io/Sign-up-form/).
 
 ## Room for Improvement
