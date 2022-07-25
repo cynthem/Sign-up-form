@@ -11,8 +11,6 @@ const phoneError = document.querySelector('.phone');
 const passwordError = document.querySelector('.password');
 const confirmError = document.querySelector('.confirm');
 
-const submitBtn = document.querySelector('.submit');
-
 firstInput.addEventListener('focusin', (e) => {
     if (firstInput.value.length <= 1) {
         firstInput.classList.add('name-invalid');
